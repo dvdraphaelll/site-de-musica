@@ -9,7 +9,7 @@
 body{
     background-color: #F2E4C9;
     min-height: 100vh;
-
+    overflow-x: hidden;
 }
 
 .interface{
@@ -295,7 +295,7 @@ header nav ul li{
 
 .next{
     margin-top: 5.5vw;
-    margin-left: 92.5vw;
+    margin-left: 92.1vw;
 }
 
 
