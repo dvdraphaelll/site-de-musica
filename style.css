@@ -22,6 +22,8 @@ body{
     display: flex;
 }
 
+/* Cabeçalho */
+
 header{
     padding: 0.9167vw 5vw;
 }
@@ -160,8 +162,6 @@ header nav ul li{
     padding: 0vw 4.85vw;
     margin-left: -0.9vw;
     transition: .2s;
-    
-
     width: 90vw;
     margin-left: 4vw;
 }
@@ -288,14 +288,14 @@ header nav ul li{
 }
 
 .prev{
-    margin-left: -3.5vw;
+    margin-left: -8.5vw;
     margin-top: 5.5vw;
 
 }
 
 .next{
     margin-top: 5.5vw;
-    margin-left: 92.1vw;
+    margin-left: 92.5vw;
 }
 
 
