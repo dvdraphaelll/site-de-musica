@@ -22,8 +22,6 @@ body{
     display: flex;
 }
 
-/* Cabeçalho */
-
 header{
     padding: 0.9167vw 5vw;
 }
@@ -159,6 +157,8 @@ header nav ul li{
     position: relative;
     z-index: 2;
     padding: 0vw 0vw;
+    padding: 0vw 4.85vw;
+    margin-left: -0.9vw;
     transition: .2s;
     
 
