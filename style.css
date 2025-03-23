@@ -6,10 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #F2E4C9;
     min-height: 100vh;
-
+    overflow-x: hidden;
 }
 
 .interface{
@@ -113,7 +117,7 @@ header nav ul li{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    margin-top: 1.3vw;
+    margin-top: 1vw;
     position: relative;
     z-index: 3;
 }
@@ -154,15 +158,19 @@ header nav ul li{
 
 .albuns{
     display: inline-block;
-    min-height: 100vh;
+    min-height: 35vh;
     box-shadow: 0 0 40px 5px #f2e4c9;
     position: relative;
     z-index: 2;
+    padding: 0vw 0vw;
     padding: 0vw 4.85vw;
     margin-left: -0.9vw;
     transition: .2s;
-    overflow: hidden; /* Esconde os itens que ultrapassam a área visível */
+    width: 90vw;
+    margin-left: 4vw;
 }
+
+
 
 .albuns .img-album-1:hover{
     transform: scale(1.02);
@@ -192,17 +200,32 @@ header nav ul li{
     transform: scale(1.02);
 }
 
-.albuns .flex{
-    display: flex;
+.conteiner-slide .slider{
+    height: 25vw;
+    width: 90vw;
     gap: 1.7vw;
-    margin-left: -2vw;
+    margin-top: 9vw;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    display: flex;
+    overflow: hidden; /* Esconde os itens que ultrapassam a área visível */
+    align-items: center; /* Centraliza verticalmente */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-.albuns h2{
+.albuns .slider .slide{
+    margin-top: 2vw;
+}
+
+h2{
     font-weight: 600;
     font-size: 2.5vw;
     font-family: Tai Heritage Pro;
     padding: 1.5vw 0;
+    margin-left: -3.7vw;
 }
 
 .img-album-1 img{
@@ -241,8 +264,99 @@ header nav ul li{
 .img-album-2 p{
     text-align: center;
     color: #000;
+
 }
+
+.img-album-7 img{
+    width:15vw;
+    height: 15vw;
+    border-radius: 10px;
+}
+
+.img-album-7 h3{
+    max-width: 15vw;
+    font-size: 1.1vw;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    margin-top: 0.4vw;
+}
+
+.img-album-7 p{
+    text-align: center;
+    color: #000;
+    margin-top: 0.8vw;
+}
+
+
 
 .interface a{
     text-decoration: none;
+}
+
+
+
+.conteiner-slide{
+    display:flex ;
+    height: 22vw;
+   
+}
+
+.prev, .next {
+ 
+    background: rgba(14, 13, 13, 0);
+    width: 1vw;
+    height: 3vw;
+    color: rgba(76, 71, 71, 0.667);
+    border: none;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 100vw;
+    font-size: 3vw;
+    z-index: 10;
+
+}
+
+.prev{
+    margin-left: -8.5vw;
+    margin-top: 5.5vw;
+
+}
+
+.next{
+    margin-top: 5.5vw;
+    margin-left: 92.1vw;
+}
+
+.next:hover{
+    color: #000000;
+}
+
+.prev:hover{
+    color: #000000;
+}   
+
+
+
+.slider{
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+    -ms-overflow-style: none; /* Esconde a barra de rolagem no IE/Edge */
+    width: 100%;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome/Safari */
+}
+
+p{
+    font-size: 1.1vw;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 2.5vw;
+    font-family: Tai Heritage Pro;
+    padding: 1.5vw 0;
+    margin-left: 1.1vw;
 }
